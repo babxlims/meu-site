@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/* RESET SIMPLES */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: "Segoe UI", Arial, sans-serif; line-height: 1.6; background:#fff; }
+
+/* ---------- NAVBAR ---------- */
+header {
+  background: linear-gradient(90deg,#e4a9b3,#6b0e1b);
+  position: sticky;  /* gruda no topo ao rolar */
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,.08);
+}
+.nav-container{
+  max-width: 1150px; margin:auto;
+  display:flex; align-items:center; justify-content:space-between;
+  padding: 10px 20px;
+}
+.logo{
+  display:flex; align-items:center; gap:8px;
+  font-size:1.6rem; font-weight:700; color:#6d002f; text-decoration:none;
+}
+.logo img{ width:50px; }
+
+/* menu desktop */
+nav ul{ display:flex; gap:35px; list-style:none; }
+nav a{ color:#6d002f; font-weight:600; text-decoration:none; position:relative; }
+nav a::after{content:""; position:absolute; bottom:-6px; left:0; width:0; height:3px;
+             background:#6d002f; transition:.3s;}
+nav a:hover::after, nav a.active::after{ width:100%; }
+
+/* ---------- HERO ---------- */
+.hero{
+  background-image: linear-gradient(to bottom,#AA4444, #dc7979);
+color:#fff;
+  text-align:center;
+  padding:90px 15px;
+}
+.hero h1{ font-size:2rem; margin-bottom:12px; }
+.hero p{ max-width:550px; margin:auto; font-size:1.1rem; }
+.hero .btn{
+  margin-top:30px;
+  background:#ffd500; color:#000; padding:12px 30px; border:none;
+  border-radius:30px; cursor:pointer; font-weight:700; transition:.3s;
+}
+.hero .btn:hover{ transform:scale(1.05); }
+
+/* ---------- SEÇÕES GENÉRICAS ---------- */
+section{ padding:60px 20px; max-width:1150px; margin:auto; }
+section h2{ text-align:center; color:#6d002f; margin-bottom:40px; }
+
+* cards produtos */
+.card-grid{ display:grid; gap:35px; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); }
+.card{
+  background:#fff; border:1px solid #ffc2d4; border-radius:12px; overflow:hidden;
+  transition:.3s; text-align:center;
+}
+.card:hover{ box-shadow:0 8px 18px rgba(0,0,0,.12); transform:translateY(-4px);}
+.card img{ width:100%; }
+.card h3{ color:#6d002f; margin:15px 0 6px; }
+.card p{ font-weight:600; }
+.card button{
+  background:#ff3366; color:#fff; border:none; width:100%; padding:10px 0;
+  font-weight:600; cursor:pointer;
+}
+.card button:hover{ background:#c90049; }
+
+/* sobre */
+.sobre p{ max-width:750px; margin:auto; font-size:1.1rem; line-height:1.8; }
+
+/* contatos */
+.contato-box{
+  display:flex; flex-wrap:wrap; gap:40px; justify-content:center;
+}
+.contato-box form{ flex:1 280px; display:flex; flex-direction:column; gap:15px; }
+.contato-box input, .contato-box textarea{
+  padding:12px; border:1px solid #ffa4c2; border-radius:8px; resize:vertical;
+}
+.contato-box button{ align-self:flex-start; padding:10px 25px; background:#ff3366; color:#fff;
+                     border:none; border-radius:8px; cursor:pointer; font-weight:600; }
+.contato-info{ flex:1 240px; color:#6d002f; }
+
+* cards produtos */
+.card-grid{ display:grid; gap:35px; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); }
+.card{
+  background:#fff; border:1px solid #ffc2d4; border-radius:12px; overflow:hidden;
+  transition:.3s; text-align:center;
+}
+.card:hover{ box-shadow:0 8px 18px rgba(0,0,0,.12); transform:translateY(-4px);}
+.card img{ width:100%; }
+.card h3{ color:#6d002f; margin:15px 0 6px; }
+.card p{ font-weight:600; }
+.card button{
+  background:#ff3366; color:#fff; border:none; width:100%; padding:10px 0;
+  font-weight:600; cursor:pointer;
+}
+.card button:hover{ background:#c90049; }
+
+/* sobre */
+.sobre p{ max-width:750px; margin:auto; font-size:1.1rem; line-height:1.8; }
+
+/* contatos */
+.contato-box{
+  display:flex; flex-wrap:wrap; gap:40px; justify-content:center;
+}
+.contato-box form{ flex:1 280px; display:flex; flex-direction:column; gap:15px; }
+.contato-box input, .contato-box textarea{
+  padding:12px; border:1px solid #ffa4c2; border-radius:8px; resize:vertical;
+}
+.contato-box button{ align-self:flex-start; padding:10px 25px; background:#ff3366; color:#fff;
+                     border:none; border-radius:8px; cursor:pointer; font-weight:600; }
+.contato-info{ flex:1 240px; color:#6d002f; }
+
+footer {background-color: rgb(61, 2, 2);
+color: #fff;}

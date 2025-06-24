@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherry Shine Beauty</title>
+    <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer>
+    // pequeno JS só pro "hamburger" no mobile
+    document.addEventListener("DOMContentLoaded",()=>{
+      const hamburger=document.querySelector(".hamburger");
+      const navMenu=document.querySelector("nav ul");
+      hamburger.addEventListener("click",()=>{
+        navMenu.classList.toggle("open");
+      });
+    });
+  </script>
+</head>
+<body>
+<header>
+  <div class="nav-container">
+    <a class="logo" href="index.html">
+      <img src="CHERRY.png" alt="Logo">
+      Cherry&nbsp;Shine<br>Beauty
+    </a>
+
+   <nav>
+      <div class="hamburger" aria-label="Abrir menu" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+      <ul>
+        <li><a class="active" href="index.html">Início</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contatos.html">Contatos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- hero existente, só lapidado -->
+  <section class="hero">
+    <h1>Desperte a sua autenticidade ✨</h1>
+    <p>Beleza com atitude, poder e elegância. Descubra nossos produtos exclusivos!</p>
+    <a href="produtos.html"><button class="btn">Ver coleção</button></a>
+  </section>
+ <!-- vitrine rápida (opcional) -->
+  <section class="produtos-destaque">
+    <h2>Queridinhos da semana 💖</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="br-11134207-7r98o-m1iswx7lsgq26d.webp" alt="Gloss Brilho Cereja">
+        <h3>Brilho Labial Cheirinho de Morango- Vivai</h3>
+        <p>R$ 8,00</p>
+        <button>Comprar</button>
+      </div>
+      <div class="card">
+        <img src="MMM.webp" alt="Iluminador Rosé">
+        <h3>Paleta Joker Sombras De Efeito Cintilante, Mousse e brilhante-Mahav</h3>
+        <p>R$ 39,90</p>
+        <button>Comprar</button>
+      </div>
+      <div class="card">
+        <img src="AAAA.webp" alt="Blush Cherry Glow">
+        <h3>Lip Tint 3 em 1- Max Love</h3>
+        <p>R$ 13,00</p>
+        <button>Comprar</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>©2025 Cherry Shine Beauty. Todos os direitos reservados.</p>
+  <p>
+    <a href="https://instagram.com/cherryshinebeauty" target="_blank">Instagram</a> •
+    <a href="mailto:contato@cherryshine.com">E-mail</a>
+</p>
+</footer>
+</body>
+</html>
